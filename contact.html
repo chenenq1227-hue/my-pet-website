@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 - PetStay Hotel</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 聯絡資訊區塊 */
+        .contact-info {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 35px;
+        }
+
+        .contact-info p {
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        /* 表單架構 */
+        .contact-form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+            resize: none;
+        }
+
+        .contact-btn {
+            background: #FF7A00;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .contact-btn:hover {
+            background: #ff9a40;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- 側邊選單 Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="room.html">房型介紹</a></li>
+            <li><a href="service.html">專業服務</a></li>
+            <li><a href="bath.html">美容洗澡</a></li>
+            <li><a href="health.html">健康照護</a></li>
+            <li><a href="food.html">寵物餐點</a></li>
+            <li><a href="booking.html">線上預約</a></li>
+            <li><a href="traffic.html">交通資訊</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+            <li><a href="contact.html" class="active">聯絡我們</a></li>
+        </ul>
+    </aside>
+
+    <!-- 主內容 Main -->
+    <main class="main-content">
+
+        <h1 class="page-title">📬 聯絡我們</h1>
+
+        <p class="lead">
+            若您對住宿、美容、健康照護或任何服務有問題，歡迎透過以下方式與我們聯繫。
+            我們會盡快回覆您！
+        </p>
+
+        <!-- 📌 聯絡資訊 -->
+        <div class="contact-info">
+            <h2 class="section-title">📍 聯絡資訊</h2>
+            <div class="divider"></div>
+
+            <p>📞 電話：<strong>04-1234-5678</strong></p>
+            <p>📬 Email：<strong>petstayservice@gmail.com</strong></p>
+            <p>📍 地址：台中市北屯區松竹路 128 號（虛擬示例）</p>
+            <p>⏰ 營業時間：每日 10:00 – 20:00</p>
+            <p>💬 Line / IG：可依需求後續增加</p>
+        </div>
+
+        <!-- 📌 表單 -->
+        <div class="contact-form">
+            <h2 class="section-title">📝 留言表單</h2>
+            <div class="divider"></div>
+
+            <form>
+                <label for="name">姓名</label>
+                <input type="text" id="name" placeholder="請輸入您的姓名">
+
+                <label for="phone">聯絡電話</label>
+                <input type="text" id="phone" placeholder="請輸入聯絡電話">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="請輸入 Email">
+
+                <label for="message">留言內容</label>
+                <textarea id="message" placeholder="請描述您想詢問的內容"></textarea>
+
+                <button type="submit" class="contact-btn">送出留言</button>
+            </form>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

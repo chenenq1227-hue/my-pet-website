@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上預約 - PetStay Hotel</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 表單外觀 */
+        .form-container {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+            max-width: 550px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #fafafa;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background: #FF7A00;
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #ff9d47;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- 側邊選單 Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="room.html">房型介紹</a></li>
+            <li><a href="service.html">專業服務</a></li>
+            <li><a href="bath.html">美容洗澡</a></li>
+            <li><a href="health.html">健康照護</a></li>
+            <li><a href="food.html">寵物餐點</a></li>
+            <li><a href="booking.html" class="active">線上預約</a></li>
+            <li><a href="traffic.html">交通資訊</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+    </aside>
+
+    <!-- 主內容 Main -->
+    <main class="main-content">
+
+        <h1 class="page-title">📝 線上預約</h1>
+
+        <p class="lead">
+            填寫以下表單後，我們將於 24 小時內與您聯繫確認預約。
+            若有緊急需求，歡迎直接來電與我們聯絡！
+        </p>
+
+        <div class="form-container">
+
+            <!-- 表單開始 -->
+            <form>
+
+                <div class="form-group">
+                    <label>飼主姓名</label>
+                    <input type="text" placeholder="請輸入您的姓名">
+                </div>
+
+                <div class="form-group">
+                    <label>聯絡電話</label>
+                    <input type="tel" placeholder="請輸入手機或市話">
+                </div>
+
+                <div class="form-group">
+                    <label>電子信箱（可選）</label>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+
+                <hr style="margin: 25px 0;">
+
+                <div class="form-group">
+                    <label>毛孩姓名</label>
+                    <input type="text" placeholder="請輸入毛孩名字">
+                </div>
+
+                <div class="form-group">
+                    <label>毛孩種類</label>
+                    <select>
+                        <option>狗</option>
+                        <option>貓</option>
+                        <option>其他（如兔子、鳥類…）</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>體型</label>
+                    <select>
+                        <option>小型（1–5 公斤）</option>
+                        <option>中型（5–15 公斤）</option>
+                        <option>大型（15 公斤以上）</option>
+                    </select>
+                </div>
+
+                <hr style="margin: 25px 0;">
+
+                <div class="form-group">
+                    <label>預約項目</label>
+                    <select>
+                        <option>住宿</option>
+                        <option>美容洗澡</option>
+                        <option>健康檢查</option>
+                        <option>日間托育</option>
+                        <option>餐點加購</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>預約日期</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>備註（特別需求）</label>
+                    <textarea placeholder="例如飲食習慣、健康狀況、行為提醒…"></textarea>
+                </div>
+
+                <button class="submit-btn">送出預約</button>
+
+            </form>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

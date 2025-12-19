@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題 - PetStay Hotel</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* FAQ 外框 */
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        /* 問題按鈕樣式 */
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #325D9E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            color: #A56A3A;
+        }
+
+        /* 展開內容 */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s ease;
+            line-height: 1.7;
+        }
+
+        /* 利用 checkbox 控制展開 */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .faq-answer {
+            max-height: 300px;
+            padding-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- 側邊選單 Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="room.html">房型介紹</a></li>
+            <li><a href="service.html">專業服務</a></li>
+            <li><a href="bath.html">美容洗澡</a></li>
+            <li><a href="health.html">健康照護</a></li>
+            <li><a href="food.html">寵物餐點</a></li>
+            <li><a href="booking.html">線上預約</a></li>
+            <li><a href="traffic.html">交通資訊</a></li>
+            <li><a href="faq.html" class="active">常見問題</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+    </aside>
+
+    <!-- 主內容 Main -->
+    <main class="main-content">
+
+        <h1 class="page-title">❓ 常見問題</h1>
+
+        <p class="lead">
+            我們整理了毛孩入住前最常被問到的問題，  
+            若仍有任何疑問，歡迎直接聯絡我們！
+        </p>
+
+        <!-- FAQ 區塊開始 -->
+
+        <!-- Q1 -->
+        <div class="faq-item">
+            <label class="faq-question" for="faq1">
+                入住前需要準備什麼？
+                <span>＋</span>
+            </label>
+            <input type="checkbox" id="faq1">
+            <div class="faq-answer">
+                建議攜帶毛孩熟悉的毯子、玩具或氣味用品，能降低陌生環境的不安感。  
+                若有固定飲食，也可自備飼料或鮮食。
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+            <label class="faq-question" for="faq2">
+                毛孩入住前是否需要施打疫苗？
+                <span>＋</span>
+            </label>
+            <input type="checkbox" id="faq2">
+            <div class="faq-answer">
+                是的，為維護所有毛孩的健康，我們要求提供有效的預防針紀錄（犬五合一 / 貓三合一）。  
+                若有狂犬病證明會更佳。
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+            <label class="faq-question" for="faq3">
+                住宿期間可以探視毛孩嗎？
+                <span>＋</span>
+            </label>
+            <input type="checkbox" id="faq3">
+            <div class="faq-answer">
+                當然可以！我們接受預約探視時間，也可透過付費加購攝影機遠端查看。  
+                毛孩狀況若有異常也會立即通知飼主。
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+            <label class="faq-question" for="faq4">
+                毛孩的飲食如何安排？
+                <span>＋</span>
+            </label>
+            <input type="checkbox" id="faq4">
+            <div class="faq-answer">
+                可依飼主需求提供飼料、鮮食或特別飲食安排。  
+                若毛孩有過敏或飲食限制，記得提前告知我們。
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+            <label class="faq-question" for="faq5">
+                如果毛孩在住宿期間生病怎麼辦？
+                <span>＋</span>
+            </label>
+            <input type="checkbox" id="faq5">
+            <div class="faq-answer">
+                我們會立即聯繫合作獸醫進行診斷，並同步通知飼主。  
+                必要時將陪同送醫，確保毛孩安全。
+            </div>
+        </div>
+
+        <!-- FAQ 結束 -->
+
+    </main>
+
+</div>
+
+</body>
+</html>
